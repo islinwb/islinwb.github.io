@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Kubernetes" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://islinwb.github.io/categories/kubernetes/" />
+<meta property="og:updated_time" content="2018-09-19T00:00:00&#43;00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kubernetes"/>
+<meta name="twitter:description" content=""/>
+<meta name="generator" content="Hugo 0.48" />
+
+
+    
+      
+    
+
+    <link rel="canonical" href="https://islinwb.github.io/categories/kubernetes/">
+
+    <title>shall see seashore shells</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://islinwb.github.io/css/style.css" rel="stylesheet" integrity="sha384-6&#43;EGfPoOzk/n2DVJSlglKT8TV1TgIMvVcKI73IZgBswLasPBn94KommV6ilJqCXE" crossorigin="anonymous">
+
+    
+    <!-- RSS 2.0 feed -->
+    <link href="https://islinwb.github.io/categories/kubernetes/index.xml" rel="alternate" type="application/rss+xml" title="shall see seashore shells" />
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://islinwb.github.io/">Home</a>
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://islinwb.github.io/" rel="home">shall see seashore shells</a></h1>
+        
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://islinwb.github.io/2018/09/deploy-kubernetes/">Deploy Kubernetes</a></h2>
+    <p class="blog-post-meta"><time datetime="2018-09-19T00:00:00Z">Wed Sep 19, 2018</time> by Weibin Lin in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/kubernetes" rel="category tag">kubernetes</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/deploy" rel="tag">deploy</a>, <a href="/tags/kubernetes" rel="tag">kubernetes</a>
+
+</p>
+  </header>
+  local up cluster cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3  NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod  Readiness probe failed Liveness probe failed  It happens frequently in a env with proxy.
+  <a href='https://islinwb.github.io/2018/09/deploy-kubernetes/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://islinwb.github.io/2018/09/docker/">Docker</a></h2>
+    <p class="blog-post-meta"><time datetime="2018-09-19T00:00:00Z">Wed Sep 19, 2018</time> by Weibin Lin in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/kubernetes" rel="category tag">kubernetes</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/deploy" rel="tag">deploy</a>, <a href="/tags/kubernetes" rel="tag">kubernetes</a>
+
+</p>
+  </header>
+  docker system df  
+  <a href='https://islinwb.github.io/2018/09/docker/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>A simple memo.</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/2018/09/open-source-dev/">Open source dev</a></li>
+
+<li><a href="/2018/09/deploy-kubernetes/">Deploy Kubernetes</a></li>
+
+<li><a href="/2018/09/docker/">Docker</a></li>
+
+<li><a href="/2018/09/host-hugo-website-on-github-pages/">Host hugo website on github pages</a></li>
+
+<li><a href="/2018/09/tests-in-ci/">Tests in CI</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://gohugo.io/documentation/">Hugo docs</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International license</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

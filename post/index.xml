@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on shall see seashore shells</title>
+    <link>https://islinwb.github.io/post/</link>
+    <description>Recent content in Posts on shall see seashore shells</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <lastBuildDate>Thu, 20 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://islinwb.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open source dev</title>
+      <link>https://islinwb.github.io/2018/09/open-source-dev/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/open-source-dev/</guid>
+      <description>intro github slack google groups</description>
+    </item>
+    
+    <item>
+      <title>Deploy Kubernetes</title>
+      <link>https://islinwb.github.io/2018/09/deploy-kubernetes/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/deploy-kubernetes/</guid>
+      <description>local up cluster cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3  NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod  Readiness probe failed Liveness probe failed  It happens frequently in a env with proxy.</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://islinwb.github.io/2018/09/docker/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/docker/</guid>
+      <description>docker system df  </description>
+    </item>
+    
+    <item>
+      <title>Host hugo website on github pages</title>
+      <link>https://islinwb.github.io/2018/09/host-hugo-website-on-github-pages/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/host-hugo-website-on-github-pages/</guid>
+      <description>Step 1. Install Hugo # env # NAME=&amp;quot;Ubuntu&amp;quot; # VERSION=&amp;quot;16.04.3 LTS (Xenial Xerus)&amp;quot; wget https://github.com/gohugoio/hugo/releases/download/v0.48/hugo_0.48_Linux-64bit.deb dpkg -i hugo_0.48_Linux-64bit.deb hugo new site &amp;lt;YOUR-PROJECT&amp;gt; cd &amp;lt;YOUR-PROJECT&amp;gt; # web browser&#39;s not in the same machine hugo server --bind &amp;quot;192.168.0.1&amp;quot; # browse the content # add content # the field `draft` hugo new post/demo.md  Step 2. Github repo and Pages Create github repo &amp;lt;YOUR-PROJECT&amp;gt; and &amp;lt;USERNAME&amp;gt;.github.io
+cd &amp;lt;YOUR-PROJECT&amp;gt; git init git remote add origin https://github.</description>
+    </item>
+    
+    <item>
+      <title>Tests in CI</title>
+      <link>https://islinwb.github.io/2018/09/tests-in-ci/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/tests-in-ci/</guid>
+      <description> test format spelling unit test </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://islinwb.github.io/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/1/01/</guid>
+      <description>submodule # clone git clone --recursive &amp;lt;repo_url&amp;gt;  configure multiple accouts remember the credential of multiple accounts in one repo</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://islinwb.github.io/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/1/01/</guid>
+      <description>The wall sucks!
+https://github.com/Googlehosts/hosts https://coding.net/u/scaffrey/p/hosts/git/tree/master</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://islinwb.github.io/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/1/01/</guid>
+      <description> Remote Desktop connect to Windows - remmina
+works fine! - rdesktop
+doesnot work with error ERROR: CredSSP: Initialize failed, do you have correct kerberos tgt initialized ?
+non-root users use oh-my-zsh Chinese input method failed in vscode </description>
+    </item>
+    
+  </channel>
+</rss>

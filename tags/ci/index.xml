@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ci on shall see seashore shells</title>
+    <link>https://islinwb.github.io/tags/ci/</link>
+    <description>Recent content in Ci on shall see seashore shells</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://islinwb.github.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tests in CI</title>
+      <link>https://islinwb.github.io/2018/09/tests-in-ci/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/tests-in-ci/</guid>
+      <description> test format spelling unit test </description>
+    </item>
+    
+  </channel>
+</rss>

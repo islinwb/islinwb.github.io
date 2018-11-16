@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://islinwb.github.io/2018/09/open-source-dev/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/2018/09/deploy-kubernetes/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/2018/09/docker/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/2018/09/host-hugo-website-on-github-pages/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/2018/09/tests-in-ci/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/1/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/1/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/1/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/ci/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/deploy/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/dev-exp/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/categories/dev-exp/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/github/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/golang/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/hugo/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/kubernetes/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/categories/kubernetes/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/post/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/test/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/categories/test/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/website/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/categories/website/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

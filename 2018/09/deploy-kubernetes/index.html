@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Deploy Kubernetes" />
+<meta property="og:description" content="local up cluster cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3  NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod  Readiness probe failed Liveness probe failed  It happens frequently in a env with proxy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://islinwb.github.io/2018/09/deploy-kubernetes/" /><meta property="article:published_time" content="2018-09-19T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-09-19T00:00:00&#43;00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Deploy Kubernetes"/>
+<meta name="twitter:description" content="local up cluster cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3  NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod  Readiness probe failed Liveness probe failed  It happens frequently in a env with proxy."/>
+<meta name="generator" content="Hugo 0.48" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Deploy Kubernetes",
+  "url": "https://islinwb.github.io/2018/09/deploy-kubernetes/",
+  "wordCount": "109",
+  "datePublished": "2018-09-19T00:00:00&#43;00:00",
+  "dateModified": "2018-09-19T00:00:00&#43;00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Weibin Lin"
+  },
+  "keywords": "kubernetes, deploy"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://islinwb.github.io/2018/09/deploy-kubernetes/">
+
+    <title>Deploy Kubernetes | shall see seashore shells</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://islinwb.github.io/css/style.css" rel="stylesheet" integrity="sha384-6&#43;EGfPoOzk/n2DVJSlglKT8TV1TgIMvVcKI73IZgBswLasPBn94KommV6ilJqCXE" crossorigin="anonymous">
+
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://islinwb.github.io/">Home</a>
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://islinwb.github.io/" rel="home">shall see seashore shells</a></h1>
+        
+      </div>
+    </header>
+    
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://islinwb.github.io/2018/09/deploy-kubernetes/">Deploy Kubernetes</a></h2>
+    <p class="blog-post-meta"><time datetime="2018-09-19T00:00:00Z">Wed Sep 19, 2018</time> by Weibin Lin in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/kubernetes" rel="category tag">kubernetes</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/deploy" rel="tag">deploy</a>, <a href="/tags/kubernetes" rel="tag">kubernetes</a>
+
+</p>
+  </header>
+  
+
+<h2 id="local-up-cluster">local up cluster</h2>
+
+<pre><code class="language-shell">cd $GOPATH/src/k8s.io/kubernetes
+hack/local-up-cluster.sh
+# success info:
+# Local Kubernetes cluster is running. Press Ctrl-C to shut it down.
+
+# open another terminal/tab
+export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig
+cd $GOPATH/src/k8s.io/kubernetes
+cluster/kubectl.sh get node
+</code></pre>
+
+<h3 id="debug">Debug</h3>
+
+<ol>
+<li>The <code>kube-dns</code> Pod is <code>Running</code> but <code>Ready: 2/3</code>
+<code>
+NAME                       READY     STATUS    RESTARTS   AGE
+kube-dns-7f59844b4-gxl87   2/3       Running   111        102m
+</code>
+When describing the Pod
+<code>
+Readiness probe failed
+Liveness probe failed
+</code>
+It happens frequently in a env with proxy.</li>
+</ol>
+
+<p><em>Solutions</em></p>
+
+<pre><code class="language-shell">unset http_proxy http_proxy
+hack/local-up-cluster.sh
+
+# if no access to internet after `unset ...`
+# download `cfssl` first 
+# fetch the link in `hack/lib/util.sh`:
+grep -E &quot;curl.*cfssl&quot; hack/lib/util.sh
+</code></pre>
+
+<h2 id="kubeadm">kubeadm</h2>
+
+<p>```</p>
+
+<h1 id="env">env</h1>
+
+<h1 id="2-vm-ubuntu-16-04-lts-ubuntu-16-04-3-lts">2*VM, Ubuntu 16.04 LTS, Ubuntu 16.04.3 LTS</h1>
+
+<p>````</p>
+
+<h2 id="kops">kops</h2>
+
+
+  
+
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>A simple memo.</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/2018/09/open-source-dev/">Open source dev</a></li>
+
+<li><a href="/2018/09/deploy-kubernetes/">Deploy Kubernetes</a></li>
+
+<li><a href="/2018/09/docker/">Docker</a></li>
+
+<li><a href="/2018/09/host-hugo-website-on-github-pages/">Host hugo website on github pages</a></li>
+
+<li><a href="/2018/09/tests-in-ci/">Tests in CI</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://gohugo.io/documentation/">Hugo docs</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International license</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on shall see seashore shells</title>
+    <link>https://islinwb.github.io/categories/kubernetes/</link>
+    <description>Recent content in Kubernetes on shall see seashore shells</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://islinwb.github.io/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploy Kubernetes</title>
+      <link>https://islinwb.github.io/2018/09/deploy-kubernetes/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/deploy-kubernetes/</guid>
+      <description>local up cluster cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3  NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod  Readiness probe failed Liveness probe failed  It happens frequently in a env with proxy.</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://islinwb.github.io/2018/09/docker/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/docker/</guid>
+      <description>docker system df  </description>
+    </item>
+    
+  </channel>
+</rss>

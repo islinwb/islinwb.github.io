@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on shall see seashore shells</title>
+    <link>https://islinwb.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on shall see seashore shells</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://islinwb.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Host hugo website on github pages</title>
+      <link>https://islinwb.github.io/2018/09/host-hugo-website-on-github-pages/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/host-hugo-website-on-github-pages/</guid>
+      <description>Step 1. Install Hugo # env # NAME=&amp;quot;Ubuntu&amp;quot; # VERSION=&amp;quot;16.04.3 LTS (Xenial Xerus)&amp;quot; wget https://github.com/gohugoio/hugo/releases/download/v0.48/hugo_0.48_Linux-64bit.deb dpkg -i hugo_0.48_Linux-64bit.deb hugo new site &amp;lt;YOUR-PROJECT&amp;gt; cd &amp;lt;YOUR-PROJECT&amp;gt; # web browser&#39;s not in the same machine hugo server --bind &amp;quot;192.168.0.1&amp;quot; # browse the content # add content # the field `draft` hugo new post/demo.md  Step 2. Github repo and Pages Create github repo &amp;lt;YOUR-PROJECT&amp;gt; and &amp;lt;USERNAME&amp;gt;.github.io
+cd &amp;lt;YOUR-PROJECT&amp;gt; git init git remote add origin https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
