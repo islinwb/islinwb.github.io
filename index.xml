@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Git</title>
+      <link>https://islinwb.github.io/2018/09/git/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/git/</guid>
+      <description>submodule # clone including submodules git clone --recursive &amp;lt;repo_url&amp;gt;  configure multiple accouts remember the credential of multiple accounts in one repo</description>
+    </item>
+    
+    <item>
       <title>Host hugo website on github pages</title>
       <link>https://islinwb.github.io/2018/09/host-hugo-website-on-github-pages/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
@@ -47,6 +56,16 @@
       <guid>https://islinwb.github.io/2018/09/host-hugo-website-on-github-pages/</guid>
       <description>Step 1. Install Hugo # env # NAME=&amp;quot;Ubuntu&amp;quot; # VERSION=&amp;quot;16.04.3 LTS (Xenial Xerus)&amp;quot; wget https://github.com/gohugoio/hugo/releases/download/v0.48/hugo_0.48_Linux-64bit.deb dpkg -i hugo_0.48_Linux-64bit.deb hugo new site &amp;lt;YOUR-PROJECT&amp;gt; cd &amp;lt;YOUR-PROJECT&amp;gt; # web browser&#39;s not in the same machine hugo server --bind &amp;quot;192.168.0.1&amp;quot; # browse the content # add content # the field `draft` hugo new post/demo.md  Step 2. Github repo and Pages Create github repo &amp;lt;YOUR-PROJECT&amp;gt; and &amp;lt;USERNAME&amp;gt;.github.io
 cd &amp;lt;YOUR-PROJECT&amp;gt; git init git remote add origin https://github.</description>
+    </item>
+    
+    <item>
+      <title>Others</title>
+      <link>https://islinwb.github.io/2018/09/others/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/others/</guid>
+      <description>The wall sucks!
+https://github.com/Googlehosts/hosts https://coding.net/u/scaffrey/p/hosts/git/tree/master</description>
     </item>
     
     <item>
@@ -59,34 +78,27 @@ cd &amp;lt;YOUR-PROJECT&amp;gt; git init git remote add origin https://github.</
     </item>
     
     <item>
-      <title></title>
-      <link>https://islinwb.github.io/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>linux</title>
+      <link>https://islinwb.github.io/2018/09/linux/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://islinwb.github.io/1/01/</guid>
-      <description>submodule # clone git clone --recursive &amp;lt;repo_url&amp;gt;  configure multiple accouts remember the credential of multiple accounts in one repo</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://islinwb.github.io/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://islinwb.github.io/1/01/</guid>
-      <description>The wall sucks!
-https://github.com/Googlehosts/hosts https://coding.net/u/scaffrey/p/hosts/git/tree/master</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://islinwb.github.io/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://islinwb.github.io/1/01/</guid>
+      <guid>https://islinwb.github.io/2018/09/linux/</guid>
       <description> Remote Desktop connect to Windows - remmina
 works fine! - rdesktop
 doesnot work with error ERROR: CredSSP: Initialize failed, do you have correct kerberos tgt initialized ?
 non-root users use oh-my-zsh Chinese input method failed in vscode </description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://islinwb.github.io/2018/09/linux/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/linux/</guid>
+      <description> Windows Subsystem for Linux  enable it
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux  restart when prompted (restart later won&amp;rsquo;t work for Windows 10 [TODO: Version])
+  terminal for VS Code, Goland, etc. TODO: - use the defult? - other terminals
+softwares </description>
     </item>
     
   </channel>

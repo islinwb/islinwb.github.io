@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic on shall see seashore shells</title>
+    <link>https://islinwb.github.io/tags/basic/</link>
+    <description>Recent content in Basic on shall see seashore shells</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://islinwb.github.io/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git</title>
+      <link>https://islinwb.github.io/2018/09/git/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/git/</guid>
+      <description>submodule # clone including submodules git clone --recursive &amp;lt;repo_url&amp;gt;  configure multiple accouts remember the credential of multiple accounts in one repo</description>
+    </item>
+    
+    <item>
+      <title>Others</title>
+      <link>https://islinwb.github.io/2018/09/others/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/others/</guid>
+      <description>The wall sucks!
+https://github.com/Googlehosts/hosts https://coding.net/u/scaffrey/p/hosts/git/tree/master</description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://islinwb.github.io/2018/09/linux/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/linux/</guid>
+      <description> Remote Desktop connect to Windows - remmina
+works fine! - rdesktop
+doesnot work with error ERROR: CredSSP: Initialize failed, do you have correct kerberos tgt initialized ?
+non-root users use oh-my-zsh Chinese input method failed in vscode </description>
+    </item>
+    
+  </channel>
+</rss>

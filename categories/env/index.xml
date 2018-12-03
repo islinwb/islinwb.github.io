@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Env on shall see seashore shells</title>
+    <link>https://islinwb.github.io/categories/env/</link>
+    <description>Recent content in Env on shall see seashore shells</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).</copyright>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://islinwb.github.io/categories/env/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux</title>
+      <link>https://islinwb.github.io/2018/09/linux/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/linux/</guid>
+      <description> Windows Subsystem for Linux  enable it
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux  restart when prompted (restart later won&amp;rsquo;t work for Windows 10 [TODO: Version])
+  terminal for VS Code, Goland, etc. TODO: - use the defult? - other terminals
+softwares </description>
+    </item>
+    
+  </channel>
+</rss>

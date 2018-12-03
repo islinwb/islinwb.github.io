@@ -30,5 +30,36 @@
       <description>docker system df  </description>
     </item>
     
+    <item>
+      <title>Git</title>
+      <link>https://islinwb.github.io/2018/09/git/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/git/</guid>
+      <description>submodule # clone including submodules git clone --recursive &amp;lt;repo_url&amp;gt;  configure multiple accouts remember the credential of multiple accounts in one repo</description>
+    </item>
+    
+    <item>
+      <title>Others</title>
+      <link>https://islinwb.github.io/2018/09/others/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/others/</guid>
+      <description>The wall sucks!
+https://github.com/Googlehosts/hosts https://coding.net/u/scaffrey/p/hosts/git/tree/master</description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://islinwb.github.io/2018/09/linux/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/2018/09/linux/</guid>
+      <description> Remote Desktop connect to Windows - remmina
+works fine! - rdesktop
+doesnot work with error ERROR: CredSSP: Initialize failed, do you have correct kerberos tgt initialized ?
+non-root users use oh-my-zsh Chinese input method failed in vscode </description>
+    </item>
+    
   </channel>
 </rss>

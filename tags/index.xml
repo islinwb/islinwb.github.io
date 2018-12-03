@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Basic</title>
+      <link>https://islinwb.github.io/tags/basic/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/tags/basic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ci</title>
       <link>https://islinwb.github.io/tags/ci/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
@@ -27,6 +36,15 @@
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://islinwb.github.io/tags/deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev Env</title>
+      <link>https://islinwb.github.io/tags/dev-env/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/tags/dev-env/</guid>
       <description></description>
     </item>
     
@@ -85,11 +103,29 @@
     </item>
     
     <item>
+      <title>Version Control</title>
+      <link>https://islinwb.github.io/tags/version-control/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/tags/version-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Website</title>
       <link>https://islinwb.github.io/tags/website/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://islinwb.github.io/tags/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows 10</title>
+      <link>https://islinwb.github.io/tags/windows-10/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://islinwb.github.io/tags/windows-10/</guid>
       <description></description>
     </item>
     

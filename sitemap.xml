@@ -18,7 +18,17 @@
   </url>
   
   <url>
+    <loc>https://islinwb.github.io/2018/09/git/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://islinwb.github.io/2018/09/host-hugo-website-on-github-pages/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/2018/09/others/</loc>
     <lastmod>2018-09-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,15 +38,19 @@
   </url>
   
   <url>
-    <loc>https://islinwb.github.io/1/01/</loc>
+    <loc>https://islinwb.github.io/2018/09/linux/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://islinwb.github.io/1/01/</loc>
+    <loc>https://islinwb.github.io/2018/09/linux/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://islinwb.github.io/1/01/</loc>
+    <loc>https://islinwb.github.io/tags/basic/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -57,6 +71,12 @@
   </url>
   
   <url>
+    <loc>https://islinwb.github.io/tags/dev-env/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://islinwb.github.io/tags/dev-exp/</loc>
     <lastmod>2018-09-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -65,6 +85,12 @@
   <url>
     <loc>https://islinwb.github.io/categories/dev-exp/</loc>
     <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/categories/env/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,6 +149,12 @@
   </url>
   
   <url>
+    <loc>https://islinwb.github.io/tags/version-control/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://islinwb.github.io/tags/website/</loc>
     <lastmod>2018-09-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -130,6 +162,12 @@
   
   <url>
     <loc>https://islinwb.github.io/categories/website/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://islinwb.github.io/tags/windows-10/</loc>
     <lastmod>2018-09-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
