@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Categories - Seashore Seashells</title>
-  <meta property="og:title" content="Categories - Seashore Seashells" />
-  <meta name="twitter:title" content="Categories - Seashore Seashells" />
+  <title>deploy - Seashore Seashells</title>
+  <meta property="og:title" content="deploy - Seashore Seashells" />
+  <meta name="twitter:title" content="deploy - Seashore Seashells" />
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Seashore Seashells" />
-  <meta property="og:url" content="islinwb.github.io/islinwb.github.io/categories/" />
+  <meta property="og:url" content="islinwb.github.io/islinwb.github.io/tags/deploy/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.59.0" />
-  <link href="islinwb.github.io/categories/index.xml" rel="alternate" type="application/rss+xml" title="Seashore Seashells" />
-  <link href="islinwb.github.io/categories/index.xml" rel="feed" type="application/rss+xml" title="Seashore Seashells" />
+  <link href="islinwb.github.io/tags/deploy/index.xml" rel="alternate" type="application/rss+xml" title="Seashore Seashells" />
+  <link href="islinwb.github.io/tags/deploy/index.xml" rel="feed" type="application/rss+xml" title="Seashore Seashells" />
 
   <link rel="stylesheet" href="/islinwb.github.io/css/style.css" media="all" />
   <link rel="stylesheet" href="/islinwb.github.io/css/syntax.css" media="all" />
@@ -39,27 +39,57 @@
 </header>
 <hr class="site-header-bottom">
 
-  
   <div class="breadcrumb">
-    Categories
+    <a href="/islinwb.github.io/tags/">Tags</a> / Deploy
   </div>
   <div class="main" role="main">
-    <section class="terms">
-      <ul>
-        <li>
-          <a href="/islinwb.github.io/categories/kubernetes/">Kubernetes(1)</a>
-          <time>November 1, 2019</time>
-        </li>
-      </ul>
+    <section class="list taxonomy-list">
+      <article class="article">
+        <a href="/islinwb.github.io/posts/kubernetes/deploy/" class="article-titles">
+          <h2 class="article-title">Deploy</h2>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>November 1, 2019</time></li>
+          <li class="article-meta-categories">
+            <a href="/islinwb.github.io/categories/kubernetes/">
+              <i class="fas fa-folder"></i>
+              Kubernetes
+            </a>&nbsp;
+          </li>
+          <li class="article-meta-tags">
+            <a href="/islinwb.github.io/tags/kubernetes/">
+              <i class="fas fa-tag"></i>
+              kubernetes
+            </a>&nbsp;
+          </li>
+          <li class="article-meta-tags">
+            <a href="/islinwb.github.io/tags/deploy/">
+              <i class="fas fa-tag"></i>
+              deploy
+            </a>&nbsp;
+          </li>
+        </ul>
+        <div class="article-content">
+          Deploying Kubernetes local up cluster # change the path if you uses go module cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3
+NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod
+        </div>
+        <div class="article-readmore"><a href="/islinwb.github.io/posts/kubernetes/deploy/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
     </section>
+    
+
+
   </div>
+
 
 
 <div class="site-footer">
   <div class="copyright">&copy; 2019 Seashore Seashells</div>
   <ul class="site-footer-items">
     <li class="site-footer-item-rsslink">
-      <a href="islinwb.github.io/categories/index.xml" type="application/rss+xml" target="_blank" title="RSS">
+      <a href="islinwb.github.io/tags/deploy/index.xml" type="application/rss+xml" target="_blank" title="RSS">
         <i class="fas fa-rss"></i>
       </a>
     </li>

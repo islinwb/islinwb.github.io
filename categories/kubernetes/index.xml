@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on Seashore Seashells</title>
+    <link>islinwb.github.io/categories/kubernetes/</link>
+    <description>Recent content in Kubernetes on Seashore Seashells</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Seashore Seashells</copyright>
+    <lastBuildDate>Fri, 01 Nov 2019 10:10:41 +0800</lastBuildDate>
+    
+	<atom:link href="islinwb.github.io/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploy</title>
+      <link>islinwb.github.io/posts/kubernetes/deploy/</link>
+      <pubDate>Fri, 01 Nov 2019 10:10:41 +0800</pubDate>
+      
+      <guid>islinwb.github.io/posts/kubernetes/deploy/</guid>
+      <description>Deploying Kubernetes local up cluster # change the path if you uses go module cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3
+NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Deploy - Seashore Seashells</title>
+  <meta property="og:title" content="Deploy - Seashore Seashells" />
+  <meta name="twitter:title" content="Deploy - Seashore Seashells" />
+  <meta name="description" content="Deploying Kubernetes local up cluster # change the path if you uses go module cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3
+NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod">
+  <meta property="og:description" content="Deploying Kubernetes local up cluster # change the path if you uses go module cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press Ctrl-C to shut it down. # open another terminal/tab export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig cd $GOPATH/src/k8s.io/kubernetes cluster/kubectl.sh get node  Debug  The kube-dns Pod is Running but Ready: 2/3
+NAME READY STATUS RESTARTS AGE kube-dns-7f59844b4-gxl87 2/3 Running 111 102m  When describing the Pod">
+  <meta name="twitter:description" content="Deploying Kubernetes local up cluster # change the path if you uses go module cd $GOPATH/src/k8s.io/kubernetes hack/local-up-cluster.sh # success info: # Local Kubernetes cluster is running. Press …">
+  <meta name="author" content=""/>
+  <meta property="og:site_name" content="Seashore Seashells" />
+  <meta property="og:url" content="islinwb.github.io/islinwb.github.io/posts/kubernetes/deploy/" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.59.0" />
+
+  <link rel="stylesheet" href="/islinwb.github.io/css/style.css" media="all" />
+  <link rel="stylesheet" href="/islinwb.github.io/css/syntax.css" media="all" />
+  <link rel="stylesheet" href="/islinwb.github.io/css/custom.css" media="all" />
+
+  <script src="/islinwb.github.io/js/script.js"></script>
+  <script src="/islinwb.github.io/js/custom.js"></script>
+  <script defer src="/islinwb.github.io/js/fontawesome.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-navi">
+    <h1 class="site-title"><a href="/islinwb.github.io/">Seashore Seashells</a></h1>
+    <ul class="site-navi-items">
+      <li class="site-navi-item-categories"><a href="islinwb.github.io/categories/" title="Categories">Categories</a></li>
+      <li class="site-navi-item-tags"><a href="islinwb.github.io/tags/" title="Tags">Tags</a></li>
+      <li class="site-navi-item-archives"><a href="islinwb.github.io/archives/" title="Archives">Archives</a></li>
+      <li class="site-navi-item-about"><a href="islinwb.github.io/about/" title="About">About</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="site-header-bottom">
+
+  <div class="main" role="main">
+    <article class="article">
+      
+      
+      <h1 class="article-title">Deploy</h1>
+      
+      <hr class="article-title-bottom">
+      <ul class="article-meta">
+        <li class="article-meta-date"><time>November 1, 2019</time></li>
+        <li class="article-meta-categories">
+          <a href="/islinwb.github.io/categories/kubernetes/">
+            <i class="fas fa-folder"></i>
+            Kubernetes
+          </a>&nbsp;
+        </li>
+        <li class="article-meta-tags">
+          <a href="/islinwb.github.io/tags/kubernetes/">
+            <i class="fas fa-tag"></i>
+            kubernetes
+          </a>&nbsp;
+        </li>
+        <li class="article-meta-tags">
+          <a href="/islinwb.github.io/tags/deploy/">
+            <i class="fas fa-tag"></i>
+            deploy
+          </a>&nbsp;
+        </li>
+      </ul>
+      
+      
+
+<h1 id="deploying-kubernetes">Deploying Kubernetes</h1>
+
+<h2 id="local-up-cluster">local up cluster</h2>
+
+<pre><code class="language-shell"># change the path if you uses go module
+cd $GOPATH/src/k8s.io/kubernetes
+hack/local-up-cluster.sh
+# success info:
+# Local Kubernetes cluster is running. Press Ctrl-C to shut it down.
+
+# open another terminal/tab
+export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig
+cd $GOPATH/src/k8s.io/kubernetes
+cluster/kubectl.sh get node
+</code></pre>
+
+<h3 id="debug">Debug</h3>
+
+<ol>
+<li><p>The <code>kube-dns</code> Pod is <code>Running</code> but <code>Ready: 2/3</code></p>
+
+<pre><code>NAME                       READY     STATUS    RESTARTS   AGE
+kube-dns-7f59844b4-gxl87   2/3       Running   111        102m
+</code></pre>
+
+<p>When describing the Pod</p>
+
+<pre><code>Readiness probe failed
+Liveness probe failed
+</code></pre>
+
+<p>It happens frequently in a env with proxy.</p></li>
+</ol>
+
+<p><em>Solutions</em></p>
+
+<pre><code class="language-shell">unset http_proxy http_proxy
+hack/local-up-cluster.sh
+
+# if no access to internet after `unset ...`
+# download `cfssl` first 
+# fetch the link in `hack/lib/util.sh`:
+grep -E &quot;curl.*cfssl&quot; hack/lib/util.sh
+</code></pre>
+
+<h2 id="kubeadm">kubeadm</h2>
+
+<p>```</p>
+
+<p>````</p>
+
+    </article>
+
+    
+
+    <div class="disqus-comments">
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    <ul class="pager article-pager">
+      <li class="pager-newer">
+          <a href="/islinwb.github.io/posts/general/data_serialization_format/" data-toggle="tooltip" data-placement="top" title="Data Serialization Format">&lt; Newer</a>
+      </li>
+      <li class="pager-older">
+        <a href="/islinwb.github.io/posts/vcs/git/" data-toggle="tooltip" data-placement="top" title="Git">Older &gt;</a>
+      </li>
+    </ul>
+  </div>
+
+
+<div class="site-footer">
+  <div class="copyright">&copy; 2019 Seashore Seashells</div>
+  <ul class="site-footer-items">
+    <li class="site-footer-item-about"><a href="islinwb.github.io/about/" title="About">About</a></li>
+  </ul>
+  <div class="powerdby">
+    Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/taikii/whiteplain">Whiteplain</a>
+  </div>
+</div>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'Toracking ID', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

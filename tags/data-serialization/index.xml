@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data serialization on Seashore Seashells</title>
+    <link>islinwb.github.io/tags/data-serialization/</link>
+    <description>Recent content in data serialization on Seashore Seashells</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Seashore Seashells</copyright>
+    <lastBuildDate>Fri, 01 Nov 2019 15:12:46 +0800</lastBuildDate>
+    
+	<atom:link href="islinwb.github.io/tags/data-serialization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Serialization Format</title>
+      <link>islinwb.github.io/posts/general/data_serialization_format/</link>
+      <pubDate>Fri, 01 Nov 2019 15:12:46 +0800</pubDate>
+      
+      <guid>islinwb.github.io/posts/general/data_serialization_format/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

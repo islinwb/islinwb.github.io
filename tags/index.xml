@@ -6,9 +6,110 @@
     <description>Recent content in Tags on Seashore Seashells</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&amp;copy; 2019 Seashore Seashells</copyright>
+    <lastBuildDate>Fri, 01 Nov 2019 16:30:45 +0800</lastBuildDate>
     
 	<atom:link href="islinwb.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>golang</title>
+      <link>islinwb.github.io/tags/golang/</link>
+      <pubDate>Fri, 01 Nov 2019 16:30:45 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>package management</title>
+      <link>islinwb.github.io/tags/package-management/</link>
+      <pubDate>Fri, 01 Nov 2019 16:30:45 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/package-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conf</title>
+      <link>islinwb.github.io/tags/conf/</link>
+      <pubDate>Fri, 01 Nov 2019 15:12:46 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/conf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data serialization</title>
+      <link>islinwb.github.io/tags/data-serialization/</link>
+      <pubDate>Fri, 01 Nov 2019 15:12:46 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/data-serialization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>json</title>
+      <link>islinwb.github.io/tags/json/</link>
+      <pubDate>Fri, 01 Nov 2019 15:12:46 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>toml</title>
+      <link>islinwb.github.io/tags/toml/</link>
+      <pubDate>Fri, 01 Nov 2019 15:12:46 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/toml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yaml</title>
+      <link>islinwb.github.io/tags/yaml/</link>
+      <pubDate>Fri, 01 Nov 2019 15:12:46 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/yaml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deploy</title>
+      <link>islinwb.github.io/tags/deploy/</link>
+      <pubDate>Fri, 01 Nov 2019 10:10:41 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>islinwb.github.io/tags/kubernetes/</link>
+      <pubDate>Fri, 01 Nov 2019 10:10:41 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>islinwb.github.io/tags/git/</link>
+      <pubDate>Thu, 31 Oct 2019 15:28:35 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vcs</title>
+      <link>islinwb.github.io/tags/vcs/</link>
+      <pubDate>Thu, 31 Oct 2019 15:28:35 +0800</pubDate>
+      
+      <guid>islinwb.github.io/tags/vcs/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
