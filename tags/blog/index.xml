@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on My Memo</title>
+    <link>http://example.org/tags/blog/</link>
+    <description>Recent content in blog on My Memo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generate website with Hugo</title>
+      <link>http://example.org/docs/website/generate-website-with-hugo/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/website/generate-website-with-hugo/</guid>
+      <description>Generate website with Hugo # prepare Hugo # https://github.com/gohugoio/hugo/releases
+create repo and add theme # hugo new site my-blog # version control for original blog content git init # add theme repo as submodule git add submodule https://github.com/alex-shpak/hugo-book themes/hugo-book configuration # baseURL = &amp;#39;https://&amp;lt;your-github-username&amp;gt;.github.io&amp;#39; languageCode = &amp;#39;en-us&amp;#39; title = &amp;#39;my-blog&amp;#39; theme = &amp;#39;hugo-book&amp;#39; [params] # (Optional, default light) Sets color theme: light, dark or auto. # Theme &amp;#39;auto&amp;#39; switches between dark and light modes based on browser/os preferences BookTheme = &amp;#39;light&amp;#39; # (Optional, default true) Controls table of contents visibility on right side of pages.</description>
+    </item>
+    
+  </channel>
+</rss>
