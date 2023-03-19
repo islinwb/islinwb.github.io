@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://example.org/docs/dev/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/dev/development-environment/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://example.org/docs/website/generate-website-with-hugo/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/docs/dev/git/</loc>
     <lastmod>2022-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://example.org/docs/website/</loc>
@@ -12,10 +21,19 @@
     <lastmod>2022-11-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
+    <loc>http://example.org/tags/bash/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://example.org/tags/blog/</loc>
     <lastmod>2022-11-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://example.org/tags/dev/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://example.org/docs/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/git/</loc>
     <lastmod>2022-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/github-pages/</loc>
@@ -28,6 +46,12 @@
     <lastmod>2022-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/version-control/</loc>
+    <lastmod>2022-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/zsh/</loc>
     <lastmod>2022-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://example.org/categories/</loc>

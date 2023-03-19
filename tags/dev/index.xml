@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Memo</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My Memo</description>
+    <title>dev on My Memo</title>
+    <link>http://example.org/tags/dev/</link>
+    <description>Recent content in dev on My Memo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Development environment</title>
       <link>http://example.org/docs/dev/development-environment/</link>
@@ -17,16 +17,6 @@
 S: kill the process re-install
 packages # pacman -S git zsh vim # ~/.zshrc alias vi=&amp;#39;vim&amp;#39; # complete hard drives in msys2 drives=$(mount | sed -rn &amp;#39;s#^[A-Z]: on /([a-z]).*#\1#p&amp;#39; | tr &amp;#39;\n&amp;#39; &amp;#39; &amp;#39;) zstyle &amp;#39;:completion:*&amp;#39; fake-files /: &amp;#34;/:$drives&amp;#34; unset drives MSYS2 respond slowly # local user
 $ mkpasswd -l -c &amp;gt; /etc/passwd$ mkgroup -l -c &amp;gt; /etc/group disable db in /etc/nsswitch.</description>
-    </item>
-    
-    <item>
-      <title>Generate website with Hugo</title>
-      <link>http://example.org/docs/website/generate-website-with-hugo/</link>
-      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/docs/website/generate-website-with-hugo/</guid>
-      <description>Generate website with Hugo # prepare Hugo # https://github.com/gohugoio/hugo/releases
-create repo and add theme # hugo new site my-blog # version control for original blog content git init # add theme repo as submodule git add submodule https://github.com/alex-shpak/hugo-book themes/hugo-book configuration # baseURL = &amp;#39;https://&amp;lt;your-github-username&amp;gt;.github.io&amp;#39; languageCode = &amp;#39;en-us&amp;#39; title = &amp;#39;my-blog&amp;#39; theme = &amp;#39;hugo-book&amp;#39; [params] # (Optional, default light) Sets color theme: light, dark or auto. # Theme &amp;#39;auto&amp;#39; switches between dark and light modes based on browser/os preferences BookTheme = &amp;#39;light&amp;#39; # (Optional, default true) Controls table of contents visibility on right side of pages.</description>
     </item>
     
     <item>

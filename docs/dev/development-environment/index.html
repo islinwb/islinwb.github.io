@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Development environment (Windows 11) # MSYS2 # install MSYS2 # Q: stuck on 66% in the first installation
+S: kill the process re-install
+packages # pacman -S git zsh vim # ~/.zshrc alias vi=&#39;vim&#39; # complete hard drives in msys2 drives=$(mount | sed -rn &#39;s#^[A-Z]: on /([a-z]).*#\1#p&#39; | tr &#39;\n&#39; &#39; &#39;) zstyle &#39;:completion:*&#39; fake-files /: &#34;/:$drives&#34; unset drives MSYS2 respond slowly # local user
+$ mkpasswd -l -c &gt; /etc/passwd$ mkgroup -l -c &gt; /etc/group disable db in /etc/nsswitch.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Development environment" />
+<meta property="og:description" content="Development environment (Windows 11) # MSYS2 # install MSYS2 # Q: stuck on 66% in the first installation
+S: kill the process re-install
+packages # pacman -S git zsh vim # ~/.zshrc alias vi=&#39;vim&#39; # complete hard drives in msys2 drives=$(mount | sed -rn &#39;s#^[A-Z]: on /([a-z]).*#\1#p&#39; | tr &#39;\n&#39; &#39; &#39;) zstyle &#39;:completion:*&#39; fake-files /: &#34;/:$drives&#34; unset drives MSYS2 respond slowly # local user
+$ mkpasswd -l -c &gt; /etc/passwd$ mkgroup -l -c &gt; /etc/group disable db in /etc/nsswitch." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/dev/development-environment/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-11-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-11-09T00:00:00+00:00" />
+
+<title>Development environment | My Memo</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css" integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.811c385ac0fc408ce2cbbc719512b6e8b807bd0d9615fea60d85467d3931016c.js" integrity="sha256-gRw4WsD8QIziy7xxlRK26LgHvQ2WFf6mDYVGfTkxAWw=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My Memo</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4be50b0d8f9a243d0d0b85d5143097d6" class="toggle" checked />
+    <label for="section-4be50b0d8f9a243d0d0b85d5143097d6" class="flex justify-between">
+      <a role="button" class="">Dev</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/dev/development-environment/" class="active">Development environment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/dev/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-627f8c7e5759dc6f30d46fbcef7a46af" class="toggle"  />
+    <label for="section-627f8c7e5759dc6f30d46fbcef7a46af" class="flex justify-between">
+      <a role="button" class="">Website</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/website/generate-website-with-hugo/" class="">Generate website with Hugo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Development environment</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#msys2">MSYS2</a>
+      <ul>
+        <li><a href="#install-msys2">install MSYS2</a></li>
+        <li><a href="#packages">packages</a></li>
+        <li><a href="#msys2-respond-slowly">MSYS2 respond slowly</a></li>
+      </ul>
+    </li>
+    <li><a href="#archived">Archived</a>
+      <ul>
+        <li><a href="#install-git">install git</a></li>
+        <li><a href="#install-zsh">install zsh</a></li>
+        <li><a href="#install-oh-my-zsh">install oh-my-zsh</a></li>
+      </ul>
+    </li>
+    <li><a href="#ref">Ref</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="development-environment-windows-11">
+  Development environment (Windows 11)
+  <a class="anchor" href="#development-environment-windows-11">#</a>
+</h1>
+<h2 id="msys2">
+  MSYS2
+  <a class="anchor" href="#msys2">#</a>
+</h2>
+<h3 id="install-msys2">
+  install MSYS2
+  <a class="anchor" href="#install-msys2">#</a>
+</h3>
+<p>Q: stuck on 66% in the first installation</p>
+<p>S: kill the process re-install</p>
+<h3 id="packages">
+  packages
+  <a class="anchor" href="#packages">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S git zsh vim
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ~/.zshrc</span>
+</span></span><span style="display:flex;"><span>alias vi<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;vim&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># complete hard drives in msys2</span>
+</span></span><span style="display:flex;"><span>drives<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>mount | sed -rn <span style="color:#e6db74">&#39;s#^[A-Z]: on /([a-z]).*#\1#p&#39;</span> | tr <span style="color:#e6db74">&#39;\n&#39;</span> <span style="color:#e6db74">&#39; &#39;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:completion:*&#39;</span> fake-files /: <span style="color:#e6db74">&#34;/:</span>$drives<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>unset drives
+</span></span></code></pre></div><h3 id="msys2-respond-slowly">
+  MSYS2 respond slowly
+  <a class="anchor" href="#msys2-respond-slowly">#</a>
+</h3>
+<p>local user</p>
+<pre tabindex="0"><code>$ mkpasswd -l -c &gt; /etc/passwd
+$ mkgroup -l -c &gt; /etc/group
+</code></pre><p>disable db in <code>/etc/nsswitch.conf</code></p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf"># Begin /etc/nsswitch.conf
+
+passwd: files # db
+group: files # db
+
+db_enum: cache builtin
+
+db_home: cygwin desc
+db_shell: cygwin desc
+db_gecos: cygwin desc
+
+# End /etc/nsswitch.conf
+</code></pre><h2 id="archived">
+  Archived
+  <a class="anchor" href="#archived">#</a>
+</h2>
+<h3 id="install-git">
+  install git
+  <a class="anchor" href="#install-git">#</a>
+</h3>
+<h3 id="install-zsh">
+  install zsh
+  <a class="anchor" href="#install-zsh">#</a>
+</h3>
+<p>zsh package:
+<code>https://packages.msys2.org/package/zsh?repo=msys&amp;variant=x86_64</code></p>
+<p>peazip:
+<code>https://peazip.github.io/</code></p>
+<p>unzip to Git program directory(<code>C:\Program Files\Git</code>)</p>
+<p>configure <code>zsh</code> as default shell</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># ~/.bashrc</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -t <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  exec zsh
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><h3 id="install-oh-my-zsh">
+  install oh-my-zsh
+  <a class="anchor" href="#install-oh-my-zsh">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>configure theme</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vi ~/.zshrc
+</span></span></code></pre></div><h2 id="ref">
+  Ref
+  <a class="anchor" href="#ref">#</a>
+</h2>
+<ul>
+<li><a href="https://dominikrys.com/posts/zsh-in-git-bash-on-windows/#installing-zsh-in-git-bash">https://dominikrys.com/posts/zsh-in-git-bash-on-windows/#installing-zsh-in-git-bash</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#msys2">MSYS2</a>
+      <ul>
+        <li><a href="#install-msys2">install MSYS2</a></li>
+        <li><a href="#packages">packages</a></li>
+        <li><a href="#msys2-respond-slowly">MSYS2 respond slowly</a></li>
+      </ul>
+    </li>
+    <li><a href="#archived">Archived</a>
+      <ul>
+        <li><a href="#install-git">install git</a></li>
+        <li><a href="#install-zsh">install zsh</a></li>
+        <li><a href="#install-oh-my-zsh">install oh-my-zsh</a></li>
+      </ul>
+    </li>
+    <li><a href="#ref">Ref</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

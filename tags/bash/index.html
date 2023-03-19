@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="static website" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="bash" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/tags/static-website/" />
+<meta property="og:url" content="http://example.org/tags/bash/" />
 
-<title>static website | My Memo</title>
+<title>bash | My Memo</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css" integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.811c385ac0fc408ce2cbbc719512b6e8b807bd0d9615fea60d85467d3931016c.js" integrity="sha256-gRw4WsD8QIziy7xxlRK26LgHvQ2WFf6mDYVGfTkxAWw=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="http://example.org/tags/static-website/index.xml" title="My Memo" />
+<link rel="alternate" type="application/rss+xml" href="http://example.org/tags/bash/index.xml" title="My Memo" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -178,7 +178,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>static website</strong>
+  <strong>bash</strong>
 
   <label for="toc-control">
     
@@ -271,7 +271,7 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
-      <a href="/docs/website/generate-website-with-hugo/">Generate website with Hugo</a>
+      <a href="/docs/dev/development-environment/">Development environment</a>
     </h2>
     
   <h5>November 9, 2022</h5>
@@ -283,19 +283,21 @@ https://github.com/alex-shpak/hugo-book
   
   <div>
     
-      <a href="/tags/static-website/">static website</a>, 
-      <a href="/tags/blog/">blog</a>, 
-      <a href="/tags/hugo/">hugo</a>, 
-      <a href="/tags/github-pages/">github pages</a>
+      <a href="/tags/bash/">bash</a>, 
+      <a href="/tags/zsh/">zsh</a>, 
+      <a href="/tags/git/">git</a>, 
+      <a href="/tags/dev/">dev</a>
   </div>
   
 
 
 
 
-    <p>Generate website with Hugo # prepare Hugo # https://github.com/gohugoio/hugo/releases
-create repo and add theme # hugo new site my-blog # version control for original blog content git init # add theme repo as submodule git add submodule https://github.com/alex-shpak/hugo-book themes/hugo-book configuration # baseURL = &#39;https://&lt;your-github-username&gt;.github.io&#39; languageCode = &#39;en-us&#39; title = &#39;my-blog&#39; theme = &#39;hugo-book&#39; [params] # (Optional, default light) Sets color theme: light, dark or auto. # Theme &#39;auto&#39; switches between dark and light modes based on browser/os preferences BookTheme = &#39;light&#39; # (Optional, default true) Controls table of contents visibility on right side of pages.
-        <a href="/docs/website/generate-website-with-hugo/">...</a>
+    <p>Development environment (Windows 11) # MSYS2 # install MSYS2 # Q: stuck on 66% in the first installation
+S: kill the process re-install
+packages # pacman -S git zsh vim # ~/.zshrc alias vi=&#39;vim&#39; # complete hard drives in msys2 drives=$(mount | sed -rn &#39;s#^[A-Z]: on /([a-z]).*#\1#p&#39; | tr &#39;\n&#39; &#39; &#39;) zstyle &#39;:completion:*&#39; fake-files /: &#34;/:$drives&#34; unset drives MSYS2 respond slowly # local user
+$ mkpasswd -l -c &gt; /etc/passwd$ mkgroup -l -c &gt; /etc/group disable db in /etc/nsswitch.
+        <a href="/docs/dev/development-environment/">...</a>
       
     </p>
   </article>
